@@ -1,0 +1,57 @@
+
+:root{
+   --main-text-color:  hsl(193, 38%, 86%);
+    --neon-green:       hsl(150, 100%, 66%);
+    --dice-text-color:  hsl(217, 19%, 38%);
+    --advice-bg-color:    hsl(217, 19%, 24%);
+    --main-bg-color:    hsl(218, 23%, 16%);
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-size: 28px;
+}
+
+.advice-container{
+    background-color: var(--advice-bg-color);
+/*     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+    height: 17rem;
+    border-radius: 3%;
+    margin: 7.5rem 10px 0px 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.advice-container span {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--neon-green);
+    letter-spacing: 2px;
+}
+
+.advice-container p {
+    color: var(--main-text-color);
+}
+
+.advice-container img {
+    display: block;
+}
+
+.advice-container button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    background-image: url(./images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--neon-green);
+    position: relative;
+    top:    30px;
+    left:   0px;
+    right:  0px;
+    bottom: 0px;
+}
