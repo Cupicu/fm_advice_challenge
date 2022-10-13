@@ -38,6 +38,7 @@ body{
 
 .advice-container p {
     color: var(--main-text-color);
+    height: 96px;
 }
 
 .advice-container img {
