@@ -16,12 +16,13 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Outfit', sans-serif;
+    height: 100vh;
 }
 
 .advice-container{
     background-color: var(--advice-bg-color);
     height: 17rem;
-    border-radius: 3%;
+    border-radius: 15px;
     margin-top: 7.5rem;
     text-align: center;
     padding: 20px;
@@ -63,4 +64,13 @@ body{
 .advice-container button:hover{
     cursor: pointer;
     box-shadow: 0px 0px 25px 1px rgba(39,255,94,0.66);
+}
+
+@media (min-width: 375px) {
+   
+    .advice-container{
+        margin-top: 250px;
+        width: 20vw;
+        height: 250px;
+    }
 }
