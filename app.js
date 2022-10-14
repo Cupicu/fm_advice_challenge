@@ -9,6 +9,8 @@ const loadNewQuote = async () =>{
     let res = await fetch('https://api.adviceslip.com/advice');
     let { slip } = await res.json();
 
+    console.log(slip);
+
     let quote = document.getElementById('advice-quote');
     quote.innerText = slip.advice;
     let quoteId = document.getElementById('advice-id');
